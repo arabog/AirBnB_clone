@@ -1,18 +1,14 @@
-#!/usr/bin/env python3
-""" Class FileStorage that serializes instances to a JSON file
-    and deserializes JSON file to instances
-"""
-
+#!/usr/bin/python3
+"""Defines the FileStorage class."""
 import json
-from os import read
 from models.base_model import BaseModel
-from models.city import City
-from models.state import State
 from models.user import User
-from models.amenity import Amenity
+from models.state import State
+from models.city import City
 from models.place import Place
+from models.amenity import Amenity
 from models.review import Review
-import os.path
+
 
 class FileStorage:
     """Represent an abstracted storage engine.
